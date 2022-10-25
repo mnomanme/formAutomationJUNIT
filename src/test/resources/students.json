@@ -1,0 +1,26 @@
+[
+	{
+		"Student Name": "Muhammad Noman",
+		"Address": "Dhaka Cantonment",
+		"State and City": "Haryana Karnal",
+		"Picture": "myImg.jpeg",
+		"Student Email": "mohammadnoman.me@gmail.com",
+		"Date of Birth": "09 September, 1996",
+		"Gender": "Male",
+		"Mobile": "1780006900",
+		"Subjects": "Novel, Mathmatics",
+		"Hobbies": "Sports, Writing"
+	},
+	{
+		"Student Name": "Muhammad Noman",
+		"Address": "Dhaka Cantonment",
+		"State and City": "Haryana Karnal",
+		"Picture": "myImg.jpeg",
+		"Student Email": "mohammadnoman.me@gmail.com",
+		"Date of Birth": "09 September, 1996",
+		"Gender": "Male",
+		"Mobile": "1780006900",
+		"Subjects": "Novel, Mathmatics",
+		"Hobbies": "Sports, Writing"
+	}
+]
