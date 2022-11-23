@@ -1,5 +1,5 @@
 package PracticeForm;
-import com.sun.org.apache.xpath.internal.operations.Bool;
+
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -15,15 +15,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.security.Key;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.List;
@@ -51,14 +46,14 @@ public class Practice_Form {
         WebElement displayed=driver.findElement(By.id("userForm"));
         Assert.assertTrue(displayed.isDisplayed());
 //        --------------------Writing on Text Box Areas----------------
-        driver.findElement(By.id("firstName")).sendKeys("Nibraj");
-        driver.findElement(By.id("lastName")).sendKeys("Khan");
+        driver.findElement(By.id("firstName")).sendKeys("Muhammad");
+        driver.findElement(By.id("lastName")).sendKeys("Noman");
         Thread.sleep(500);
-        driver.findElement(By.id("userEmail")).sendKeys("nibrajkhan123@gmail.com");
+        driver.findElement(By.id("userEmail")).sendKeys("mohammadnoman.me@gmail.com");
         Thread.sleep(500);
         driver.findElement(By.id("userNumber")).sendKeys("1780006900");
         Thread.sleep(1500);
-        driver.findElement(By.id("currentAddress")).sendKeys("383,Rosa Vista,Modhubagh,Moghbazar");
+        driver.findElement(By.id("currentAddress")).sendKeys("16,Cost Rica,Dhaka,Cantonment");
 //    ---------------------------Radio Button Test----------------------
         WebElement radioButtonFemale=driver.findElement(By.xpath("//label[contains(text(),'Female')]"));
         radioButtonFemale.click();
@@ -73,7 +68,7 @@ public class Practice_Form {
         WebElement calendarInput= driver.findElement(By.id("dateOfBirthInput"));
         calendarInput.sendKeys(Keys.CONTROL+"a");
         Thread.sleep(1000);
-        calendarInput.sendKeys("03/18/1999");
+        calendarInput.sendKeys("09/09/1996");
         Thread.sleep(1000);
         calendarInput.sendKeys(Keys.ENTER);
 //        --------------------Subject Choose--------------
@@ -101,7 +96,7 @@ public class Practice_Form {
 //    --------------Uploading Pictures----------------
         Thread.sleep(1000);
         WebElement uploadPic= driver.findElement(By.id("uploadPicture"));
-        uploadPic.sendKeys("C:\\Users\\NibrazKhan\\Pictures\\Saved Pictures\\myImg.jpeg");
+        uploadPic.sendKeys("C:\\Users\\abdullah\\Pictures\\Saved Pictures\\myImg.jpeg");
 //      ---------------State and City Dropdown value choose---------------
         WebElement state= driver.findElement(By.id("react-select-3-input"));
         WebElement city= driver.findElement(By.id("react-select-4-input"));
